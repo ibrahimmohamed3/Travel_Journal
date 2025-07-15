@@ -1,12 +1,17 @@
-import './App.css'
+
+import Header from './components/Header';
+import Entry from './components/Entry';
+
 
 function App() {
-  
-  return (
-    <>
-  
-    </>
-  )
+   
+
+    return (
+        <div>
+            <Header />
+            <Entry />
+        </div>
+    );
 }
 
-export default App
+export default App;
