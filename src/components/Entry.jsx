@@ -2,9 +2,10 @@ import mountFujiImg from "../assets/mount-fuji.jpg"; // Ensure this image exists
 
 function Entry(props) {
     
+    
   return (
     <section className="entry">
-      <img src={props.img.src} alt={props.img.alt} className="entry-img" />
+      <img src={mountFujiImg} alt={props.img.alt} className="entry-img" />
       <div className="entry-info">
         <span className="entry-location">{props.country}</span>
         <a
@@ -24,3 +25,6 @@ function Entry(props) {
 }
 
 export default Entry;
+
+
+
