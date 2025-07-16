@@ -1,11 +1,11 @@
-import mountFujiImg from "../assets/mount-fuji.jpg"; // Ensure this image exists
+// Ensure this image exists
 
 function Entry(props) {
-    
+
     
   return (
     <section className="entry">
-      <img src={mountFujiImg} alt={props.img.alt} className="entry-img" />
+      <img src={props.img} alt={props.img.alt} className="entry-img" />
       <div className="entry-info">
         <span className="entry-location">{props.country}</span>
         <a

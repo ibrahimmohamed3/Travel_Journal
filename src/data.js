@@ -1,8 +1,13 @@
+import mountFujiImg from "./assets/mount-fuji.jpg"; 
+import Sydney from "./assets/sydney.jpg"; 
+import Geiranger from "./assets/Geirangerfjord.jpg"; 
+
+
 export default [
     {
         id: 1,
         img: {
-            src: "https://scrimba.com/links/travel-journal-japan-image-url",
+            src: {mountFujiImg},
             alt: "Mount Fuji"
         },
         title: "Mount Fuji",
@@ -14,7 +19,7 @@ export default [
     {
         id: 2,
         img: {
-            src: "https://scrimba.com/links/travel-journal-australia-image-url",
+            src: {Sydney},
             alt: "Sydney Opera House"
         },
         title: "Sydney Opera House",
@@ -26,7 +31,7 @@ export default [
     {
         id: 3,
         img: {
-            src: "https://scrimba.com/links/travel-journal-norway-image-url",
+            src: {Geiranger},
             alt: "Geirangerfjord"
         },
         title: "Geirangerfjord",
