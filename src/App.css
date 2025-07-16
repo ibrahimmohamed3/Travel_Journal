@@ -1,59 +1,78 @@
-* {
-    box-sizing: border-box;
+.entry {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  margin: 24px auto;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 16px;
 }
 
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-    background-color: whitesmoke;
+.entry-img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 18px;
 }
 
-.contacts {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
+.entry-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.contact-card {
-    flex-basis: 225px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 13px;
-    padding-bottom: 20px;
-    background-color: white;
+.entry-location {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #f55a5a;
+  font-weight: bold;
 }
 
-.contact-card > img {
-    width: 100%;
-    height: auto;
-    align-self: center;
-    border-radius: 5px;
-    object-fit: cover;
+.entry-maps {
+  font-size: 12px;
+  color: #888;
+  margin-left: 8px;
+  text-decoration: underline;
 }
 
-.contact-card > h3 {
-    font-weight: 700;
-    font-size: 18px;
+.entry-title {
+  margin: 8px 0 4px 0;
+  font-size: 22px;
 }
 
-.info-group {
-    display: flex;
-    align-items: center;
+.entry-date {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
 }
 
-.info-group > img {
-    height: 11px;
-    margin-right: 8px;
+.entry-desc {
+  font-size: 14px;
+  color: #333;
 }
 
-.info-group > p {
-    margin-block: 3px;
-    font-size: 12px;
-    color: #2B283A;
+
+/* Add to App.css */
+.header {
+  display: flex;
+  align-items: center;
+  background: #f55a5a;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 8px 8px 0 0;
+  margin: 24px auto 0 auto;
+  max-width: 600px;
+}
+
+.header--logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.header--title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }

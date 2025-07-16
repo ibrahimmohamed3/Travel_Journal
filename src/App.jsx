@@ -1,37 +1,27 @@
-import "./App.css";
-import Contact from "./components/Contact";
+import mountFujiImg from './assets/mount-fuji.jpg'
+import Entry from "./components/Entry";
+import Header from "./components/Header";
 
-
-
-function App() {
+export default function App() {
   return (
-    <div className="contacts">
-      <Contact 
-      img = './images/mr-whiskerson.png'
-      name ="Mr. Whiskerson"
-      contact = "(212) 555-1234"
-      email = 'mr.whiskaz@catnap.meow'
-      />
-      <Contact
-      img = "./images/fluffykins.png"
-      name = "FluffyKins"
-      contact = "(212) 555-2345"
-      email ="fluff@me.com"
-      />
-      <Contact
-      img = "./images/felix.png"
-      name = "Felix"
-      contact = "(212) 555-2545"
-      email ="fluff@me.com"
-      />
-      <Contact 
-      img = "./images/pumpkin.png"
-      name = "Pumpkin"
-      contact = "(212) 555-2645"
-      email ="pum@me.com"
-      />
-    </div>
+
+<div>
+            <Header />
+            <Entry 
+            img = {{
+                src : {mountFujiImg},
+                alt : "MountFuji"
+
+            }}
+            title = "Mount Fuji"
+            country = "Japan"
+            googleMapLink = "https://www.google.com/maps?q=mount+fuji"
+            dates = "12 Jan, 2021 - 24 Jan, 2021"
+            text = "Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists."
+            />
+        </div>
+
   );
 }
 
-export default App;
+
